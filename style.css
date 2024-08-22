@@ -1,0 +1,608 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* This css causes parallex effect in the sections */
+
+section {
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#headSection {
+  background-image: url(hero-bg.jpg);
+  height: 100vh;
+}
+#whyUsSection {
+  background-image: url(us-bg.jpg);
+}
+#healthSection {
+  background-image: url(healthy-bg.jpg);
+}
+#trainerSection {
+  background-image: url(trainer-bg.jpg);
+  height: 100vh;
+}
+
+@media (max-width: 1050) {
+  section {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 850px) {
+  section {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 550px) {
+  section {
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* Nav css and Head section */
+
+nav {
+  height: 5rem;
+  display: flex;
+
+  align-items: center;
+  padding-inline: 2rem;
+  background-color: #ea4258;
+}
+nav h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+  margin-right: 50%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 3rem;
+  font-size: 1.2;
+}
+
+.list a:active {
+  text-decoration: underline red 3px;
+}
+
+.list a:hover {
+  text-decoration: underline red 3px;
+}
+
+.list span {
+  margin-left: 10px;
+}
+
+.menubar {
+  display: none;
+
+  height: 0;
+  width: 0;
+}
+
+.menubar div {
+  display: none;
+}
+
+@media (max-width: 1050px) {
+  nav h1 {
+    margin-right: 70%;
+  }
+  .list a,
+  span {
+    display: none;
+  }
+
+  .menubar {
+    display: block;
+    height: 2.7rem;
+    width: 2.7rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menubar div {
+    display: block;
+    height: 0;
+    width: 2.7rem;
+    border-bottom: 8px solid white;
+
+    font-size: 2.7rem;
+    padding-bottom: 4px;
+  }
+}
+
+@media (max-width: 550px) {
+  nav h1 {
+    margin-right: 40%;
+  }
+}
+
+.headDetail {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 27rem;
+  padding-top: 5rem;
+  padding-inline: 20rem;
+}
+
+.headDetail h5 {
+  font-size: 2rem;
+}
+.headDetail h3 {
+  font-size: 2.7rem;
+}
+
+.headDetail h1 {
+  font-size: 4rem;
+}
+
+.headDetail p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  width: 47rem;
+  text-align: center;
+  height: 6.5rem;
+}
+
+.headDetail button {
+  padding-inline: 2.5rem;
+  padding-block: 0.8rem;
+  font-size: 0.8rem;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  margin-top: 2rem;
+}
+
+.headDetail button:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .headDetail p {
+    width: 38rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .headDetail {
+    margin-top: 7rem;
+  }
+  .headDetail p {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .headDetail {
+    padding-inline: 1rem;
+    height: 80vh;
+  }
+  .headDetail p {
+    width: 20rem;
+    margin-top: 1.5rem;
+    margin-bottom: 8rem;
+  }
+}
+
+/* Why choose us section */
+
+#whyUsSection {
+  color: white;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#whyUsSection h1 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+}
+.whyUsItem {
+  display: flex;
+
+  height: 60%;
+  width: 75%;
+  justify-content: space-evenly;
+  margin-top: 1.2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 7px;
+
+  margin-bottom: 10px;
+  height: 15rem;
+  width: 15rem;
+}
+
+@media (max-width: 1050px) {
+  #whyUsSection {
+    height: 100vh;
+    padding-bottom: 1rem;
+  }
+  .whyUsItem {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    gap: 1.4rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #whyUsSection {
+    height: auto;
+    padding-block: 1rem;
+  }
+  .whyUsItem {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 80%;
+    width: 30rem;
+    gap: 0.7rem;
+  }
+  .item {
+    width: 27rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .item {
+    width: 22rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Health Section CSS */
+
+#healthSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.healthdiv {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90%;
+  text-align: center;
+  gap: 2rem;
+}
+
+.healthdiv h1 {
+  font-size: 2rem;
+}
+.healthdiv p {
+  font-size: 1.2rem;
+}
+
+.healthdiv button {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+}
+
+.healthdiv button:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .healthdiv {
+    width: 65%;
+  }
+}
+
+@media (max-width: 550px) {
+  .healthdiv {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Trainers section CSS */
+
+#trainerSection {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  padding-bottom: 3rem;
+}
+#trainerSection h1 {
+  padding-block: 2rem;
+  font-size: 3rem;
+}
+
+.trainerContainer {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+.trainerprofile {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  position: relative;
+}
+
+.trainerImage {
+  height: 25rem;
+  width: 22rem;
+  border-radius: 2rem;
+  margin-top: 10px;
+}
+.trainerImage img {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.trainerSocialMedia {
+  background-color: white;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  border-radius: 30rem;
+  gap: 1.6rem;
+  position: absolute;
+  top: 26rem;
+}
+
+@media (max-width: 1050px) {
+  #trainerSection {
+    height: auto;
+  }
+
+  .trainerContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .trainerImage {
+    margin-top: 20px;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #trainerSection {
+    justify-content: center;
+  }
+  .trainerContainer {
+    margin-left: 27%;
+
+    width: 20rem;
+  }
+  .trainerImage {
+    height: 20rem;
+    width: 18rem;
+    border-radius: 2rem;
+    margin-top: 10px;
+  }
+  .trainerSocialMedia {
+    background-color: white;
+    padding-inline: 4rem;
+    padding-block: 1rem;
+    border-radius: 30rem;
+    gap: 1.6rem;
+    position: absolute;
+    top: 21rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .trainerContainer {
+    margin-left: 6%;
+
+    width: 20rem;
+  }
+}
+
+/* Your Detail area in Contact section */
+
+#contactSection {
+  display: flex;
+  background-color: #26223d;
+  height: 100vh;
+}
+
+.contactUsImage {
+  height: 100vh;
+  width: 50%;
+}
+.contactUsImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.yourDetails {
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  height: 100vh;
+  color: white;
+  justify-content: center;
+  padding-left: 2rem;
+  gap: 3rem;
+}
+.yourDetails h1 {
+  font-size: 2.5rem;
+}
+
+.yourDetails input {
+  width: 30rem;
+  height: 3rem;
+  font-size: 1.3rem;
+}
+.yourDetails textarea {
+  width: 30rem;
+  height: 6rem;
+  font-size: 1.3rem;
+}
+
+.yourDetails button {
+  background-color: #ea4258;
+  color: white;
+  margin-left: 22rem;
+  width: 8rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  #contactSection {
+    height: 95vh;
+  }
+
+  .contactUsImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .yourDetails input {
+    width: 85%;
+    height: 3rem;
+    font-size: 1rem;
+  }
+  .yourDetails textarea {
+    width: 85%;
+    height: 6rem;
+    font-size: 1rem;
+  }
+  .yourDetails button {
+    margin-left: 15rem;
+  }
+}
+
+@media (max-width: 850px) {
+  #contactSection {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .contactUsImage {
+    width: 100%;
+  }
+  .contactUsImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .yourDetails {
+    width: 100%;
+    padding-left: 3rem;
+  }
+  .yourDetails input {
+    width: 85%;
+    height: 3rem;
+    font-size: 1.3rem;
+  }
+  .yourDetails textarea {
+    width: 85%;
+    height: 6rem;
+    font-size: 1.3rem;
+  }
+  .yourDetails button {
+    background-color: #ea4258;
+    color: white;
+    margin-left: 14rem;
+    width: 10rem;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 550px) {
+  .contactUsImage {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .contactUsImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .yourDetails {
+    width: 100%;
+    padding-left: 1.8rem;
+  }
+  .yourDetails button {
+    margin-left: 8rem;
+  }
+}
+
+/* Our contact details section #242232 */
+
+#ourContact {
+  background-color: #242232;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  color: white;
+  font-size: 2rem;
+}
+.ourDetail {
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  #ourContact {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+footer p {
+  text-align: center;
+}
